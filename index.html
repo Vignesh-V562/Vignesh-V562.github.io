@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vignesh V — AI Engineer & Developer. Building intelligent systems with Machine Learning, Deep Learning, and scalable AI solutions.">
+  <meta name="keywords" content="Vignesh V, AI Engineer, Developer, Machine Learning, Deep Learning, Portfolio">
+  <meta name="author" content="Vignesh V">
+  <title>Vignesh V</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="icon" type="image/png" href="static/Fav.png">
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <canvas id="neural-canvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+
+    <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="#" download class="nav-cv-btn">
+          Download CV
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+
+    <p class="hero-intro">
+      <svg class="intro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+      Hi, my name is <strong>Vignesh</strong> and I am an
+    </p>
+
+    <h1 class="hero-title-solid">AI Engineer</h1>
+
+    <h2 class="hero-title-outline"><span class="accent">&</span> Developer</h2>
+
+    <p class="hero-location">based in Chennai, India.</p>
+
+    <div class="hero-cta-row">
+      <a href="mailto:vigneshvelmurugan542@gmail.com" class="cta-btn cta-primary" data-hover>
+        Let's Connect
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"/>
+          <polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </a>
+
+      <div class="scroll-indicator" id="scrollIndicator">
+        <div class="scroll-mouse"></div>
+        <span>Scroll</span>
+      </div>
+
+      <a href="#projects" class="cta-btn cta-secondary" data-hover>
+        View Projects
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-photo-wrapper">
+      <img src="static/Profile_org_1.png" alt="Vignesh V" class="hero-photo">
+    </div>
+
+
+
+  </section>
+
+  
+  <section class="section about" id="about">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>About Me</span>
+      </div>
+
+      <div class="about-grid">
+                <div class="about-photo-block reveal">
+          <div class="about-photo-frame">
+            <img src="static/Profile.jpeg" alt="Vignesh V" class="about-photo">
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h2 class="section-title">I build intelligent<br>systems that <span class="text-outline">matter.</span></h2>
+          <p class="about-text">
+            I am a dedicated professional with a strong foundation in problem-solving and analytical thinking. I am passionate about developing scalable solutions and bridging the gap between innovative research and practical, real-world applications to drive meaningful impact.
+          </p>
+          <p class="about-text">
+            Beyond my core pursuits, I actively engage in leadership roles, fostering collaboration and effective communication within teams. I believe that building great products requires not just expertise, but also a strong understanding of user needs and teamwork.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Skills & Tools</span>
+      </div>
+      <h2 class="section-title section-title-center reveal">My <span class="text-outline">tech stack.</span></h2>
+
+      <div class="skill-cloud-container reveal">
+                <div class="skill-category-group">
+          <h3 class="skill-category-title">Languages</h3>
+          <div class="skill-orbs-wrapper">
+             <div class="skill-orb"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+             <div class="skill-orb"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+             <div class="skill-orb"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+             <div class="skill-orb"><i class="devicon-c-plain colored"></i><span>C</span></div>
+             <div class="skill-orb"><i class="devicon-azuresql-plain colored"></i><span>SQL</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-group">
+          <h3 class="skill-category-title">AI & ML Frameworks</h3>
+          <div class="skill-orbs-wrapper">
+             <div class="skill-orb"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
+             <div class="skill-orb"><i class="devicon-keras-plain colored"></i><span>Keras</span></div>
+             <div class="skill-orb"><i class="devicon-scikitlearn-original colored"></i><span>Scikit-learn</span></div>
+             <div class="skill-orb"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
+             <div class="skill-orb"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
+             <div class="skill-orb"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-group">
+          <h3 class="skill-category-title">Web Development</h3>
+          <div class="skill-orbs-wrapper">
+             <div class="skill-orb"><i class="devicon-react-original colored"></i><span>React JS</span></div>
+             <div class="skill-orb"><i class="devicon-nodejs-plain colored"></i><span>Node JS</span></div>
+             <div class="skill-orb"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+             <div class="skill-orb"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+             <div class="skill-orb"><i class="devicon-express-original colored"></i><span>Express.js</span></div>
+             <div class="skill-orb"><i class="devicon-html5-plain colored"></i><span>HTML/CSS</span></div>
+             <div class="skill-orb"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+             <div class="skill-orb"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-group">
+          <h3 class="skill-category-title">DevOps & Tools</h3>
+          <div class="skill-orbs-wrapper">
+             <div class="skill-orb"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+             <div class="skill-orb"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+             <div class="skill-orb"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+             <div class="skill-orb"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
+             <div class="skill-orb"><i class="devicon-supabase-plain colored"></i><span>Supabase</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="projects-split-container">
+      
+      <div class="projects-left">
+        <div class="sticky-wrapper reveal">
+          <p class="handwriting-text">from 2023 'til today</p>
+          <h2 class="massive-title">My latest work</h2>
+          <svg class="hand-underline" viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5,15 Q150,5 295,15" stroke="#fbc531" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <svg class="hand-arrow" viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25,5 Q40,40 10,60 T25,95" stroke="#a4b0be" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <polyline points="15,85 25,95 35,80" stroke="#a4b0be" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="projects-right">
+        <div class="projects-stack">
+          
+          <div class="project-card glass-card stacked-card" id="card-1">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="devicon-python-plain colored"></i></div>
+              <h3 class="project-title">RepoGPT</h3>
+            </div>
+            <p class="project-desc">RAG-based code analysis agent enabling natural language queries on indexed GitHub codebases via a vector search pipeline.</p>
+            <div class="project-image-wrapper">
+              <img src="static/RepoGPT.png" alt="RepoGPT Project" class="project-image">
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>RAG</span><span>Next.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Vignesh-V562/RepoGPT" target="_blank" class="project-link" data-hover><i class="devicon-github-original"></i> GitHub</a>
+              <a href="https://repogpt-client.vercel.app/" target="_blank" class="project-link" data-hover>Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project-card glass-card stacked-card" id="card-2">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="devicon-opencv-plain colored"></i></div>
+              <h3 class="project-title">Part-fViT Attendance</h3>
+            </div>
+            <p class="project-desc">Real-time facial recognition system using FastAPI and OpenCV with EdgeFace XS and Part-fViT for high-precision automated attendance tracking.</p>
+            <div class="project-image-placeholder">
+              <span>[ Project Screenshot Placeholder ]</span>
+            </div>
+            <div class="project-tags">
+              <span>FastAPI</span><span>OpenCV</span><span>Part-fViT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Vignesh-V562/Face-Recognized-Attendance" target="_blank" class="project-link" data-hover><i class="devicon-github-original"></i> GitHub</a>
+              <a href="#" target="_blank" class="project-link" data-hover>Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project-card glass-card stacked-card" id="card-3">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="devicon-react-original colored"></i></div>
+              <h3 class="project-title">NutriGo</h3>
+            </div>
+            <p class="project-desc">Full-stack food ordering ecosystem with role-based modules, Firebase auth, and Razorpay payment integration.</p>
+            <div class="project-image-wrapper">
+              <img src="static/NeutriGo.png" alt="NutriGo Project" class="project-image">
+            </div>
+            <div class="project-tags">
+              <span>MERN</span><span>Firebase</span><span>Razorpay</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Vignesh-V562/NutriGo" target="_blank" class="project-link" data-hover><i class="devicon-github-original"></i> GitHub</a>
+              <a href="https://nutrigo-eight.vercel.app/" target="_blank" class="project-link" data-hover>Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project-card glass-card stacked-card" id="card-4">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="devicon-fastapi-plain colored"></i></div>
+              <h3 class="project-title">Talk-to-Data</h3>
+              <span class="badge-ongoing">Ongoing</span>
+            </div>
+            <p class="project-desc">AI platform converting natural language into executable SQL queries and dynamic visualizations with real-time dashboards.</p>
+            <div class="project-image-placeholder">
+              <span>[ Project Screenshot Placeholder ]</span>
+            </div>
+            <div class="project-tags">
+              <span>NLP</span><span>FastAPI</span><span>SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link" data-hover><i class="devicon-github-original"></i> GitHub</a>
+              <a href="#" target="_blank" class="project-link" data-hover>Live Demo →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section contact" id="contact">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Get In Touch</span>
+      </div>
+
+      <div class="connect-split-layout">
+        <div class="connect-left reveal">
+          <h2 class="contact-title">Let's build<br>something <span class="text-outline">great.</span></h2>
+          <p class="contact-subtitle">Ready to collaborate? Reach out via email or find me across the web.</p>
+          
+          <div class="social-nodes">
+            <a href="mailto:vigneshvelmurugan542@gmail.com" class="social-node glass-card" data-hover>
+              <div class="node-icon"><i class="devicon-google-plain colored"></i></div>
+              <div class="node-content">
+                <span class="node-label">Email</span>
+                <span class="node-value">Send a message</span>
+              </div>
+              <svg class="node-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            
+            <a href="https://github.com/Vignesh-V562" target="_blank" rel="noopener noreferrer" class="social-node glass-card" data-hover>
+              <div class="node-icon"><i class="devicon-github-original colored"></i></div>
+              <div class="node-content">
+                <span class="node-label">GitHub</span>
+                <span class="node-value">Explore my repos</span>
+              </div>
+              <svg class="node-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/vignesh-velmurugan-15756b332/" target="_blank" rel="noopener noreferrer" class="social-node glass-card" data-hover>
+              <div class="node-icon"><i class="devicon-linkedin-plain colored"></i></div>
+              <div class="node-content">
+                <span class="node-label">LinkedIn</span>
+                <span class="node-value">Connect with me</span>
+              </div>
+              <svg class="node-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="connect-right reveal">
+          <form class="terminal-form glass-card" id="contactForm">
+                        <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">~/vignesh/send_payload.js</span>
+            </div>
+            
+            <div class="terminal-body">
+              <div class="code-line">
+                <span class="code-keyword">const</span> <span class="code-var">sender</span> = {
+              </div>
+              
+              <div class="code-line indent-1">
+                <span class="code-string">"name"</span>: <input type="text" id="formName" class="terminal-input" placeholder="[ enter_name ]" required>,
+              </div>
+              
+              <div class="code-line indent-1">
+                <span class="code-string">"email"</span>: <input type="email" id="formEmail" class="terminal-input" placeholder="[ enter_email ]" required>
+              </div>
+              
+              <div class="code-line">
+                };
+              </div>
+              
+              <br>
+              <div class="code-line">
+                <span class="code-comment">// define payload</span>
+              </div>
+              
+              <div class="code-line">
+                <span class="code-keyword">const</span> <span class="code-var">message</span> = <span class="code-string">`</span>
+              </div>
+              
+              <div class="code-line indent-1">
+                <textarea id="formMessage" class="terminal-input terminal-textarea" placeholder="[ initialize prompt sequence... ]" rows="4" required></textarea>
+              </div>
+              
+              <div class="code-line">
+                <span class="code-string">`</span>;
+              </div>
+              
+              <br>
+              <div class="code-line">
+                <span class="code-keyword">await</span> <span class="code-func">transmit</span>(sender, message);
+              </div>
+              
+            </div>
+            
+            <div class="terminal-footer">
+              <button type="submit" class="terminal-submit-btn form-submit" data-hover>
+                <i class="devicon-bash-plain"></i> > EXECUTE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed & Built by <strong>Vignesh V</strong>❣️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
